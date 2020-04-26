@@ -1,0 +1,480 @@
+*{margin:0;
+padding: 0;}
+@font-face {
+    font-family: "SF Display";
+    font-weight: 400;
+    src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
+}
+
+@font-face {
+    font-family: "SF Display Bold";
+    font-weight: 700;
+    src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
+}
+body{
+    background-color:#fffff;
+    width:100%;}
+header {
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 4fr) 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+    #logodark {
+
+        margin:50px 50px 50px 50px;
+        background-size: 100px,100px, cover;
+        background-image: url("src/logodark.jpg");
+        background-repeat: no-repeat;
+        grid-area: 1 / 1 / 2 / 2; }
+     nav {
+         position: relative;
+         margin:auto;
+         width: 525px;
+         height: 21px;
+         grid-area: 1 / 3 / 2 / 4; }
+
+     nav ul li {
+         font-family: "SF Display", sans-serif;
+         padding-right:10px;
+         list-style-type: none;
+         display: inline-block;
+         z-index: 5;
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 20px;
+
+
+     }
+  header  #button {
+        background-position: right;
+        background-size: 50px 50px,cover;
+        background-image: url("src/threelines.jpg"),no-repeat;
+        grid-area: 1 / 4 / 2 / 5; }
+    #massYoga {
+        grid-area: 2 / 2 / 3 / 3; }
+#massYoga h1 {
+
+    margin: auto;
+    z-index: 4;
+    width: 700px;
+    height: 145px;
+    font-family: "SF Display Bold", sans-serif;
+    font-size: 109px;
+    font-weight: 400;
+    line-height: 145px;
+    letter-spacing: -2px;
+ }
+    #miYogaisyo {
+        grid-area: 2 / 3 / 3 / 4; }
+    #miYogaisyo p{
+        top:20%;
+        z-index: 4;
+        margin:auto;
+        width: 525px;
+        height: 48px;
+        color: #6e6e6e;
+        position: relative;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        font-family: "SF Display", sans-serif;
+    }
+
+#hero-image{
+    height:660px;
+width:100%;}
+#hero-image #image-banner {
+
+    position:relative;
+    background-image:url("src/image1.jpg");
+    background-size:cover;
+    margin:50px auto;
+    padding:8px;
+    width:1440px;
+    background-color:black;
+    height:600px;
+    z-index: 3;
+}
+
+#hero-image #image-banner #image-button1 {
+
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height:159px;
+    width:525px;
+    background: black;
+
+}
+#hero-image #image-banner #image-button1 #description{
+    z-index: 6;
+    width: 180px;
+    height: 56px;
+    color: #ffffff;
+    font-family: "SF Display";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+#hero-image #image-banner #image-button1 #description #vid
+{
+    z-index: 6;
+    width: 78.89px;
+    height: 32px;
+    color: #d8d8d8;
+    font-family: "SF Display";
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 32px;
+}
+#hero-image #image-banner #image-button1 #play{
+    bottom: 0px;
+    right: 0px;
+    color:white;
+    background: url("src/play.jpg"),no-repeat;
+    background-size:  cover;
+
+
+    z-index: 8;
+    position: absolute;
+    display:block;
+
+    top:0px;
+    height:159px;
+    width:159px;
+
+}
+.short {
+    position: relative;
+    z-index: 7;
+    width: 270.62px;
+    height: 40px;
+    color: #7e7e7e;
+    font-family: "SF Display";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+#hero-image  #discover{
+    display:inline-block;
+    width:120px;
+    padding: 8px;
+    position: relative;
+    margin-left:216px;
+    margin-bottom:50px;
+    top:0px;
+    bottom:0;
+
+
+}
+#hero-image #discover p
+{
+    z-index: 5;
+    width: 95.35px;
+    height: 20px;
+    font-family: "SF Display";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+#hero-image  #discoverline{
+    width:120px;
+    font-family: "SF Display";
+    position: relative;
+    margin-left:16px;
+    display:inline-block;
+    top:-3px;
+    bottom:0;
+    border-bottom: 1px solid black;
+
+}#hero-image  #discoverpage{
+     width:5px;
+     float: right;
+     margin-right:378px;
+     font-family: "SF Display";
+     position: relative;
+     margin-left:16px;
+     display:inline-block;
+     top:-3px;
+     bottom:0;
+     letter-spacing: 10px;
+
+ }
+#hero-image  #discoverlin2{
+    width:100px;
+    float:right;
+    margin-right: -140px;
+    font-family: "SF Display";
+    position: relative;
+    margin-left:16px;
+    display:inline-block;
+    top:6px;
+    border-bottom: 1px solid black;
+
+}
+#hero-image  #discoverpage2{
+    width:5px;
+    float: right;
+    margin-right:-160px;
+    font-family: "SF Display";
+    position: relative;
+    margin-left:16px;
+    display:inline-block;
+    top:-3px;
+    bottom:0;
+    letter-spacing: 10px;
+
+}
+
+#sequences
+{
+   display: block;
+    height:1080px;
+
+
+
+}
+#sequences #seq-dec{
+    position: relative;
+    top:200px;
+    left:216px;
+   display:inline-block;
+    width:525px;
+    height:468px;
+    background:white;
+    float:left;
+}
+
+#sequences #seq-dec #text{
+    z-index: 7;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 525px;
+    height: 185.81px;
+    font-family: "SF Display";
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 96px;
+    letter-spacing: -0.5px;
+
+
+}
+.highlight
+{
+
+    background: linear-gradient(180deg,rgba(255,255,255,0) 45%, #d7ecef 35%);
+}
+
+
+#sequences #seq-dec #description2{
+      z-index: 5;
+       margin-top:150px;
+      width: 525px;
+      height: 81.29px;
+      color: #6e6e6e;
+      font-family: "SF Display";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 28px;
+}
+
+#sequences #seq-dec #learn-more
+{
+    z-index: 4;
+    width: 204px;
+    height: 61.94px;
+    background: black;
+    display:inline-block;
+    margin-top:75px;
+}
+#sequences #seq-dec #learn-more p
+{
+    white-space: nowrap;
+    z-index: 6;
+    width: 89.97px;
+    height: 16px;
+    color: #ffffff;
+    font-family: "SF Display";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: center;
+    position: relative;
+    top: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin:auto;
+}
+#sequences #gallery
+{
+    right:0;
+    height:1080px;
+    width:948px;
+    margin-top:110px;
+    padding: 0;
+    position:absolute;
+
+    background-size:cover;
+    background-image:url("src/image2.jpg");
+}
+#sequences #gallery #button-back
+{
+    background-color:black;
+
+    z-index: 6;
+    margin:auto;
+    width: 80px;
+    height: 80px;
+    display:inline-block;
+    float:left;
+}
+#sequences #gallery #button-fw
+{
+
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    display:inline-block;
+    float:left;
+}
+
+.arrow
+{
+
+    margin-left:32px;
+    margin-top:25px;
+
+}
+
+
+
+#sequences #learn-more
+{
+    z-index: 9;
+    width: 204px;
+    height: 61.94px;
+    background: black;
+    display:inline-block;
+    margin-top:180px;
+}
+#about-us
+{
+
+    height:1240px;
+    background-color:#f2f3f3;
+
+}
+#about-us #text1
+{
+
+    position: relative;
+    background-color:#f2f3f3 ;
+    top:200px;
+    left:216px;
+    z-index: 6;
+    width: 525px;
+    height: 96px;
+    font-family: "SF Display";
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 96px;
+    letter-spacing: -0.5px;
+}
+
+#about-us #box1
+{
+    position: relative;
+    top:300PX;
+    left:216px;
+    float:left;
+    display: inline-block;
+    margin:20px;
+    background-color: white;
+    width:342px;
+    height:582px;
+
+
+}
+#about-us #box1 p
+{
+    z-index: 5;
+    width: 207px;
+    height: 143px;
+    color: #6e6e6e;
+    font-family: "SF Display";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    top:180px;
+    position: relative;
+    left:68px;
+
+}
+#about-us #box1 h3
+{
+    z-index: 4;
+    width: 220px;
+    height: 22px;
+    font-family: "SF Display";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 2px;
+    text-align: center;
+    letter-spacing: -0.9333336px;
+    top:150px;
+    position: relative;
+    left:68px;
+    display: block;
+    background-color: #d7ecef;
+    background-repeat:no-repeat;
+    background-size: 50% auto;
+    padding: 0;
+}
+.line {
+    display:inline-block;
+    border: 1px solid #7e7e7e; width: 56px; margin-right: 20px; margin-bottom: 5px;  }
+
+#about-us #box1 #image
+{
+    z-index: 5;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display:inline-block;
+    top:100px;
+    left:131px;
+
+}
+#about-us #box1 #button-learn-more
+{
+    z-index: 6;
+    width: 100px;
+    height: 16px;
+    color: #6897d6;
+    font-family: "SF Display";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display:inline-block;
+    top:230px;
+    left:125px;
+
+}
+
+
