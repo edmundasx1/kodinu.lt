@@ -28,7 +28,7 @@ class AudioController{
     }
     victory(){
         this.stopMusic();
-        this.victory.play();
+        this.victorySound.play();
     }
     gameOver()
     {
@@ -70,7 +70,7 @@ class MixOrMatch {
         }, 1000);
     }
     gameOver(){
-        clearInterval(this.countdown);
+        clearInterval(this.countDown);
         this.audioController.gameOver();
         document.getElementById('game-over-text').classList.add('visible');
     }
@@ -93,23 +93,23 @@ class MixOrMatch {
             this.ticker.innerText = this.totalClicks;
             card.classList.add('visible');
             //ifs statement
-            if (this.cardToCheck)
-                this.checkForCardMatch(card);
-            else
-            this.cardToCheck = card;
+            if (this.cardToCheck){
+                this.checkForCardMatch(card);}
+            else{
+            this.cardToCheck = card;}
         }
 
 }
     checkForCardMatch(card){
         if(this.getCardType(card)===this.getCardType(this.cardToCheck))
             //match
-            this.cardMatch(card, this.cardToCheck);
+            this.CardMatch(card, this.cardToCheck);
         else
-            this.cardMisMatch(card, this.cardToCheck);
+            this.CardMisMatch(card, this.cardToCheck);
         this.cardToCheck=null;
 
     }
-    cardMatch(card1, card2){
+    CardMatch(card1, card2){
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
         card1.classList.add('matched');
@@ -118,7 +118,7 @@ class MixOrMatch {
         if(this.matchedCards.length===this.cardsArray.length)
             this.victory();
     }
-    cardMisMatch(card1,card2)
+    CardMisMatch(card1,card2)
     {
         this.busy=true;
         setTimeout(()=>{
@@ -172,4 +172,3 @@ function ready()
         });
     });
 }
-
